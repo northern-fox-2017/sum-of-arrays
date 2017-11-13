@@ -1,5 +1,16 @@
 function sum_array(arr) {
-  //your code here
+  var number = arr[0];
+  var tampung = 0;
+  if(arr[0] > arr[1]){
+    for(i = arr[1]; i<=arr[0]; i++){
+      tampung += i;
+    }
+  }else{
+    for(i = arr[0]; i<=arr[1]; i++){
+      tampung += i;
+    }
+  }
+  return tampung;
 }
 
 
