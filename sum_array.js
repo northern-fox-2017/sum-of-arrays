@@ -1,13 +1,20 @@
 function sum_array(arr) {
-  let newArr = arr.sort()
-  
+
   let hasil = 0;
-  for (let i = newArr[0]; i <= newArr[1]; i++) {
-    hasil += i
+
+  if(arr[0] < arr[1]){
+    for (let i = arr[0]; i <= arr[1]; i++) {
+      hasil += i
+    }
+  }else{
+    for (let i = arr[0]; i >= arr[1]; i--) {
+      hasil += i
+    }
   }
+
   return hasil
 }
-// console.log(sum_array([5,1]));
+
 console.log('Testing\n')
 console.log('input | expected | actual')
 console.log('——————|——————————|————————')
