@@ -2,19 +2,22 @@ function sum_array(arr) {
   //your code here
   var awal = arr[0];
   var akhir = arr[1];
-  var hasil = 0
 
-  if (awal < akhir) {
-    for (var i = awal; i <= akhir; i++) {
-      hasil += i
+  if (awal <= akhir) {
+    if (awal == akhir) {
+      return awal;
+    }else {
+      var hasil = awal;
+      return hasil + sum_array([awal + 1, akhir])
     }
   }else {
-    for (var i = awal; i >= akhir; i--) {
-      hasil += i
+    if (awal == akhir) {
+      return akhir;
+    }else {
+      var hasil = akhir;
+      return hasil + sum_array([awal, akhir + 1])
     }
   }
-
-  return hasil
 }
 
 
