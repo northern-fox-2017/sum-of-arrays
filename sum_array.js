@@ -1,9 +1,8 @@
 function sum_array(arr) {
   nilai = 0;
-  strarr = String(arr);
-  pisah  = strarr.split(',').sort()
- num1 = Number (pisah[0])
-  num2 = Number(pisah[1])
+  pisah  = arr.sort()
+  num1 = pisah[0]
+  num2 = pisah[1]
   //your code here
 
 for (var i = num1; i <=num2; i++) {
